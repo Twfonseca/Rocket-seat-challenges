@@ -25,12 +25,8 @@ body{
     justify-content: space-between;
 }
 
-.navDesktop{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 25% 10% auto;
+.coffeImage, .backgroundContainer,.navDesktop,.bkgBottomContainer{
+    display: none;
 }
 
 .desktopLinks{
@@ -117,6 +113,7 @@ body{
      1px -1px 0px #8257E5,                  
      1px 0px 0px #8257E5;
 }
+
 .imageContainer{
     height:100vh;
     width: 100vw;
@@ -130,10 +127,76 @@ body{
     bottom: -4px;
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:940px) {
 
-    #section1, #section2, #section4, #section6{
+    #section1, #section2, #section3, #section4, #section6,.imageContainer{
         display: none;
+    }
+
+    .navDesktop{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 25% 3% auto;
+    }
+    
+    .desktopLinks{
+        display:flex;
+        align-items: center;
+        list-style: none;
+        color: white;
+        margin-left: 5%;
+    }
+
+
+    #btnStyle{
+        border:1px solid #8257E5;
+        padding:15px 35px;
+        border-radius: 10px;
+    }
+
+    .sloganTow{
+        text-align: center;
+        margin:3% auto 0% auto;
+    }
+    
+    .coffeTxt{
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    
+    .codeTxt{
+        font-size: 5rem;
+        font-weight: 600;
+        color:black;
+        text-shadow: 
+        -1px -1px 0px #8257E5, 
+        -1px 1px 0px #8257E5,                    
+         1px -1px 0px #8257E5,                  
+         1px 0px 0px #8257E5;
+    }
+
+    .backgroundContainer,.bkgBottomContainer,.coffeImage{
+        display: initial;
+    }
+
+    .backgroundContainer{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        top: -880px;
+        width: 100vw;
+    }
+
+    .bkgBottomContainer{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        top: -1277px;
+        width: 100vw;
     }
 }
 
