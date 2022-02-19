@@ -2,27 +2,110 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    outline: none;
+    border: none;
     font-family: 'Manrope', sans-serif;
     color: white;
 }
 
 body{
     background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
 }
 
 .mobileNav{
     width: 90vw;
-    margin:9% 5%;
+    margin:10% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.listStyle{
+    list-style: none;
+    display: none;
+}
+
+.listStyle li{
+    padding:15px;
+    color:#A8A8B3;
+    border: 1px solid #29292E;
+    width: 100vw;
+}
+
+.listStyle li:hover{
+    color:white;
+    border-left: 5px solid #8257E5; 
+}
+
+.menuStyle{
+    display: initial;
+}
+
+.closeStyle{
+    display: none;
+}
+
 .sloganContainer{
     width: 80vw;
     text-align: center;
-    margin: 10% auto 8% auto;
+    margin: 20% auto 15% auto;
 }
+
+.slogan{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid #8257E5;
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15%;
+    text-transform: uppercase;
+}
+
+.sloganTow{
+    text-align: center;
+    margin:15% auto 0% auto;
+}
+
+.coffeTxt{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.codeTxt{
+    font-size: 50px;
+    font-weight: 600;
+    color:black;
+    text-shadow: 
+    -1px -1px 0px #8257E5, 
+    -1px 1px 0px #8257E5,                    
+     1px -1px 0px #8257E5,                  
+     1px 0px 0px #8257E5;
+}
+.imageContainer{
+    height:100vh;
+    width: 100vw;
+    background: url("../blur-mobile.png") no-repeat center;
+    background-size: cover;
+}
+
+.coffeeImg{
+    position: relative;
+    width: 100vw;
+    bottom: -4px;
+}
+
+
+
 
 
 

@@ -11,13 +11,34 @@
     <title>RocketCoffe</title>
 </head>
 <body>
-  <nav class="mobileNav">
+  <nav id="section1" class="mobileNav">
     <img src="./assets/logo-mobile.svg" alt="Rocketseat logo for mobile screen">
-    <img src="./assets/menu-buguer-open.svg" alt="Menu burger style">
+    <img class="menuStyle" id="menuClick" src="./assets/menu-buguer-open.svg" alt="Menu burger style">
+    <img  class="closeStyle" id="closeClick" src="assets/menu-buguer-close.svg" alt="A X to close the menu">
   </nav>
-  <section class="sloganContainer">
+   <section id="section2" class="menuMobile">
+     <ul class="listStyle">
+       <li>Home</li>
+       <li>Menu</li>
+       <li>Recompensas</li>
+       <li>Girft Cards</li>
+       <li>Lojas</li>
+     </ul>
+   </section>
+  <section id="section3" class="sloganContainer">
     <p class="slogan">O café que fará seu código decolar para o próximo nível.</p>
   </section>
+  <button id="section4" class="btn">Pegar meu café</button>
+  <section id="section5" class="sloganTow">
+    <p class="coffeTxt">Great Coffee</p>
+    <p class="codeTxt">&lt;Great Code/&gt;</p>
+  </section>
+  <figure id="section6" class="imageContainer">
+       <img class="coffeeImg" src="assets/rocket-coffee.png" alt="">
+  </figure>
+
+
+
 
 
   <script src="script/script.js"></script>
